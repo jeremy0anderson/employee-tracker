@@ -2,7 +2,7 @@
     "name": "mysql-cli",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index2.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -21,6 +21,7 @@
         "console.table": "0.10.0",
         "dotenv": "^16.0.0",
         "inquirer": "8.2.1",
-        "mysql2": "2.3.3"
+        "mysql2": "2.3.3",
+        "sequelize": "^6.17.0"
     }
 }
