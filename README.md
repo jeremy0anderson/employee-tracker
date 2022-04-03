@@ -25,5 +25,3 @@
   ### Contact me at: 
   [jeremy0anderson](https://github.com/jeremy0anderson)  
   projects@jeremyanderson.dev
-  ### Video Demo: 
-  https://github.com/jeremy0anderson/Readme-Generator/blob/cd05d849e548523e0d289fce9bb21abe8d90f63e/demonstration/README.md%20generator%20demonstration.mov
