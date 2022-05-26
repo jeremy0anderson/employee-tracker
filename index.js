@@ -132,7 +132,7 @@ const newRole = () => {
         return inquirer.prompt([
             {
                 type: 'input',
-                name: 'job_title',
+                name: 'title',
                 message: "What's the new job title?",
                 validate: job_titleInput => {
                     if (job_titleInput) {
@@ -171,7 +171,7 @@ const newRole = () => {
             const selectedDepartment = res.find(departments => departments.name === role.department_id);
 
             db.query('INSERT INTO roles SET ?', {
-                job_title: role.job_title,
+                title: role.title,
                 salary: role.salary,
                 department_id: selectedDepartment.id
             });
@@ -195,7 +195,7 @@ const newEmployee = () => {
                     if (first_nameInput) {
                         return true;
                     } else {
-                        console.log("No first name has been entered, please try again.")
+                        console.log("Need valid virstname")
                     }
                 }
             },
@@ -207,21 +207,14 @@ const newEmployee = () => {
                     if (last_nameInput) {
                         return true;
                     } else {
-                        console.log("No last name has been entered, please try again.")
+                        console.log("need valid lastname")
                     }
                 }
             },
             {
                 type: 'input',
                 name: 'manager_id',
-                message: "What's the new employee's manager's employee id?",
-                validate: manager_idInput => {
-                    if (manager_idInput) {
-                        return true;
-                    } else {
-                        console.log("No manager id has been entered, please try again.")
-                    }
-                }
+                message: "What's the new employee's manager's employee id?"
             },
             {
                 type: 'list',
