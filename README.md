@@ -25,3 +25,5 @@
   ### Contact me at: 
   [jeremy0anderson](https://github.com/jeremy0anderson)  
   projects@jeremyanderson.dev
+
+  ## [Video Walkthrough](https://drive.google.com/file/d/1WulNF10cwl4iqLaxYWDApBXHTaefew-f/view?usp=sharing)
